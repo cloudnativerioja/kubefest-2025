@@ -1,0 +1,78 @@
+---
+import FooterImage from '@/images/shape/footer_shape_h3.png';
+import { Image } from 'astro:assets';
+import Link from '@/icons/Link.astro';
+import GitHub from '@/icons/GitHub.astro';
+import LinkedIn from '@/icons/LinkedIn.astro';
+import YouTube from '@/icons/YouTube.astro';
+---
+
+<!-- Footer Section Start -->
+<div class="footer-section footer-section-3">
+  <Image src={FooterImage} alt="Shape" class="footer-shape" />
+  <div class="footer-widget-social">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <div class="social-title">
+            <h4 class="title">Conecta con nosotros</h4>
+          </div>
+        </div>
+        <div class="col-12">
+          <ul class="social-list">
+            <li>
+              <a target="_blank" href="https://cloudnativerioja.com">
+                <Link height="24" />
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/cloudnativerioja">
+                <GitHub height="24" />
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/company/cloud-native-rioja/"
+              >
+                <LinkedIn height="24" />
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/channel/UCPJSWBgMthDZ_VYAopkbA7w"
+              >
+                <YouTube height="24" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Copyright Start -->
+  <div class="footer-copyright-area">
+    <div class="container">
+      <div class="footer-copyright-wrap">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <!-- Footer Copyright Text Start -->
+            <div class="copyright-text text-center">
+              <p>
+                ©2025 -
+                <a target="_blank" href="https://cloudnativerioja.com">
+                  Cloud Native Rioja
+                </a>
+              </p>
+            </div>
+            <!-- Footer Copyright Text End -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Copyright End -->
+</div>
+<!-- Footer Section End -->

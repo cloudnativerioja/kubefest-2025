@@ -1,0 +1,80 @@
+---
+import { Image } from 'astro:assets';
+
+import About2Shape2 from '@/images/shape/about2shape2.png';
+import KudeDay from '@/images/kubeday.jpg';
+import KubeDay2 from '@/images/kubeday-2.jpg';
+import CalenderIcon from '@/images/calender-icon.png';
+import WorldIcon from '@/images/world-icon.png';
+---
+
+<!-- About Start -->
+<div id="about" class="about-area-2 section-padding-07">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xxl-7 col-lg-6 text-lg-left text-center">
+        <div class="thumnail-wrap">
+          <div class="about-thumbnails">
+            <Image src={About2Shape2} alt="shape" class="about-shape-2" />
+            <div class="main-img">
+              <Image
+                src={KudeDay}
+                alt="KubeDay Rioja SDI"
+                class="about-img-1 img-fluid"
+              />
+              <Image
+                src={KubeDay2}
+                alt="KubeDay Rioja Stand"
+                class="about-img-2 img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-5 col-lg-6">
+        <div class="about-content">
+          <div class="about-title">
+            <span class="title-numb">Único</span>
+            <div class="section-title">
+              <h2 class="title">
+                Evento de Kubernetes <br /> en La Rioja
+              </h2>
+            </div>
+            <p class="section-paragraph">
+              Bienvenido al evento de Kubernetes en Logroño, La Rioja. Estamos
+              entusiasmados de ofrecerte una experiencia única donde explorarás
+              la infraestructura moderna. Únete a nosotros para aprender,
+              conectar y crecer en el emocionante mundo de Kubernetes y más
+              allá.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="abot-event">
+              <Image src={CalenderIcon} alt="calender" />
+              <h5>¿Cuando?</h5>
+              <p>27 de Febrero 2025<br />18.00 - 20.00</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="abot-event">
+              <Image src={WorldIcon} alt="calender" />
+              <h5>¿Donde?</h5>
+              <p>
+                <a
+                  target="_blank"
+                  href="https://maps.app.goo.gl/DyKMBE9k5vaiQH8x6"
+                >
+                  La Barra de SDi / Espacio de Networking - Podcast de
+                  Digitalización y Marketing
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- About End -->

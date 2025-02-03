@@ -1,0 +1,95 @@
+---
+import { Image, getImage } from 'astro:assets';
+import { YouTube } from 'astro-embed';
+import HeroFadeShape1 from '@/images/shape/hero-fade-shape1.png';
+import HeroFadeShape2 from '@/images/shape/hero-fade-shape2.png';
+import Hero2Shape1 from '@/images/shape/hero-2-shape1.png';
+import KubefestLogoWhite from '@/images/logo/kubefest-logo-white.svg';
+import KubeconBg from '@/images/bg/kubecon.jpg';
+import Countdown from './Countdown.astro';
+
+const optimizedKubeconBg = await getImage({ src: KubeconBg });
+---
+
+<!-- Hero Start -->
+<div
+  class="section exvent-hero-section-02"
+  style={`background-image: url('${optimizedKubeconBg.src}')`}
+>
+  <Image
+    data-aos="fade-left"
+    data-aos-delay="600"
+    data-aos-duration="1200"
+    class="shape-1 img-fluid"
+    src={HeroFadeShape1}
+    alt="Shape"
+  />
+  <Image
+    data-aos="fade-right"
+    data-aos-delay="600"
+    data-aos-duration="1200"
+    class="shape-2 img-fluid"
+    src={HeroFadeShape2}
+    alt="Shape"
+  />
+  <div class="hero-shape-3"></div>
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-8">
+        <div class="exvent-hero-title text-center">
+          <h1
+            class="title"
+            data-aos="fade-down"
+            data-aos-delay="600"
+            data-aos-duration="1200"
+          >
+            <Image src={KubefestLogoWhite} alt="Kubefest" />
+          </h1>
+          <h5
+            class="sub-title"
+            data-aos="fade-down"
+            data-aos-delay="800"
+            data-aos-duration="1200"
+          >
+            27 Febrero<br />2025
+          </h5>
+          <p
+            class="description"
+            data-aos="fade-down"
+            data-aos-delay="800"
+            data-aos-duration="1200"
+          >
+            Descubre Kubernetes en La Rioja
+          </p>
+          <Image
+            src={Hero2Shape1}
+            alt="Shape"
+            class="shape-3 img-fluid opacity-75"
+            data-aos="fade-right"
+            data-aos-delay="400"
+            data-aos-duration="1200"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="row justify-content-center"
+      data-aos="fade-left"
+      data-aos-delay="650"
+      data-aos-duration="1200"
+    >
+      <div class="col-md-10 text-center">
+        <Countdown date="2025/02/27" />
+        <!-- <YouTube id="Kq_CKHwE2p8" /> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hero End -->
+
+<style>
+  lite-youtube {
+    border-radius: 20px;
+    box-shadow: 0px 0px 160px -46px rgba(0, 171, 238, 0.6);
+  }
+</style>

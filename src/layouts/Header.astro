@@ -1,0 +1,56 @@
+---
+import { Image } from 'astro:assets';
+import TicketsButton from '@/components/TicketsButton.astro';
+import Logo from '@/images/logo/logo-cncf-rioja.svg';
+---
+
+<!-- Header Start Transparent header  -->
+<div id="header" class="section exvent-header-2">
+  <div class="container">
+    <!-- Header Wrap Start  -->
+    <div class="header-wrap p-0 d-flex">
+      <div class="header-logo">
+        <a href="/" class="only-sticky d-none d-lg-block opacity-75">
+          <Image src={Logo} height={40} alt="Cloud Native Rioja" />
+        </a>
+      </div>
+
+      <div class="header-menu">
+        <ul class="main-menu">
+          <li>
+            <a href="#about">Info</a>
+          </li>
+          <li>
+            <a href="#speakers">Speakers</a>
+          </li>
+          <li>
+            <a href="#schedule">Agenda</a>
+          </li>
+          <li>
+            <a href="#sponsors">Sponsors</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header-btn">
+        <div class="only-sticky d-none d-lg-block">
+          <TicketsButton />
+        </div>
+      </div>
+    </div>
+    <!-- Header Wrap End  -->
+  </div>
+</div>
+<!-- Header End -->
+
+<script>
+  window.onscroll = () => {
+    const left = document.getElementById('header');
+
+    if (left.scrollTop > 550 || self.scrollY > 550) {
+      left.classList.add('sticky');
+    } else {
+      left.classList.remove('sticky');
+    }
+  };
+</script>

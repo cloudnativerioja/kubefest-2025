@@ -1,0 +1,73 @@
+---
+import { Image } from 'astro:assets';
+
+import ScheduleShape3 from '@/images/shape/schedule_shape3.png';
+import ScheduleShape4 from '@/images/shape/schedule_shape4.png';
+import SpeakerJorgePerez from '@/images/speaker/jorge-perez.jpg';
+---
+
+<!-- Schedule Area Start -->
+<div id="schedule" class="schedule-area schedule-area-2 section-padding-02">
+  <Image src={ScheduleShape3} class="schedule-shape3" alt="Shape3" />
+  <Image src={ScheduleShape4} class="schedule-shape4" alt="Shape4" />
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title-wrap">
+          <div class="section-title text-center">
+            <h5 class="sub-title orange">Agenda</h5>
+            <h2 class="title">Planifica tu día con nosotros</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-0 align-items-start">
+      <div class="col-12">
+        <div class="tab-content">
+          <div class="tab-pane show active">
+            <div class="schedule-wrapper">
+              <div class="single-schedule">
+                <div class="row g-0 align-items-center shedule-row">
+                  <div class="col-lg-3 col-12">
+                    <div class="schedule-thumbnail text-center">
+                      <Image
+                        src={SpeakerJorgePerez}
+                        alt="Jorge Perez"
+                        class="schedule-thumb-img"
+                      />
+                      <h5 class="mt-2"><strong>Ponente</strong></h5>
+                      <p class="text-muted">
+                        <a
+                          href="https://empresa.com/"
+                          target="_blank"
+                          rel="nofollow"
+                        >
+                          Empresa
+                        </a>
+                      </p>
+                      <p class="text-muted">
+                        <strong>09:30 - 10:00</strong>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-9 col-12">
+                    <div class="schedule-content-wrap">
+                      <div class="schedule-content">
+                        <h4 class="schedule-title">Titulo charla</h4>
+                        <div class="schedule-descrip">
+                          <p>Descripción charla</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Schedule Area End -->

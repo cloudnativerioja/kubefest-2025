@@ -1,0 +1,64 @@
+---
+import { Image } from 'astro:assets';
+
+import Google from '@/images/sponsor/google.svg';
+import Cncf from '@/images/sponsor/cncf.svg';
+import Bosonit from '@/images/sponsor/bosonit.svg';
+import Fer from '@/images/sponsor/fer.svg';
+import GlobantCreate from '@/images/sponsor/globant-create.svg';
+import Civo from '@/images/sponsor/civo.svg';
+import Aertic from '@/images/sponsor/aertic.svg';
+import Learnk8s from '@/images/sponsor/learnk8s.svg';
+import KubeEvents from '@/images/sponsor/kube-events.svg';
+import KubeCareers from '@/images/sponsor/kube-careers.svg';
+---
+
+<!-- Brand Start -->
+<div id="sponsors" class="brand-area section-padding-01 pb-5 mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title-wrap">
+          <div class="section-title text-center">
+            <h5 class="sub-title orange">Sponsors</h5>
+            <h2 class="title">Ellos lo hacen posible</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-center text-center py-5">
+      <div
+        class="col-md-4 col-8 d-flex align-items-center justify-content-center"
+      >
+        <div class="brand-item">
+          <a
+            target="_blank"
+            rel="nofollow"
+            href="https://developers.google.com/community/devfest"
+          >
+            <Image src={Google} alt="Google Developers" />
+          </a>
+        </div>
+      </div>
+      <div
+        class="col-md-4 col-9 d-flex align-items-center justify-content-center"
+      >
+        <div class="brand-item">
+          <a target="_blank" rel="nofollow" href="https://www.cncf.io/">
+            <Image src={Cncf} alt="Cloud Native Computing Foundation (CNCF)" />
+          </a>
+        </div>
+      </div>
+      <div
+        class="col-md-3 col-6 d-flex align-items-center justify-content-center"
+      >
+        <div class="brand-item">
+          <a target="_blank" rel="nofollow" href="https://bosonit.com">
+            <Image class="mb-2" src={Bosonit} alt="Bosonit" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Brand End -->
+</div>
