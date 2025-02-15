@@ -2644,10 +2644,11 @@ textarea:-ms-input-placeholder {
 
 .exvent-hero-section-02 .exvent-hero-title .shape-3 {
   position: absolute;
-  left: -83px;
-  top: 50px;
+  left: -94px;
+  top: 103px;
   pointer-events: none;
   z-index: -10;
+  zoom: 0.76;
 }
 
 @media only screen and (max-width: 991px) {
@@ -4920,11 +4921,11 @@ textarea:-ms-input-placeholder {
   .shedule-row
   .schedule-thumbnail
   .schedule-thumb-img {
-  width: 90px;
-  height: 90px;
+  width: 110px;
+  height: 110px;
   object-fit: cover;
   border-radius: 50%;
-  filter: grayscale(0.5);
+  filter: grayscale(0.1);
 }
 
 @media only screen and (max-width: 575px) {
