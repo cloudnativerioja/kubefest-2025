@@ -1500,11 +1500,15 @@ textarea:-ms-input-placeholder {
 }
 
 .header-menu .main-menu li .menu-icon::after {
-  content: "\f16c";
-  font-family: "flaticon";
-  font-size: 10px;
-  color: #94a0b9;
-  margin-left: 5px;
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 3px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%2394a0b9' d='M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   transition: all 0.3s linear;
 }
 
@@ -1526,7 +1530,7 @@ textarea:-ms-input-placeholder {
   position: absolute;
   left: 0;
   top: 110%;
-  width: 270px;
+  width: auto;
   background: #ffffff;
   box-shadow: 0 2px 29px rgba(0, 0, 0, 0.05);
   padding: 20px 0;
@@ -1550,6 +1554,7 @@ textarea:-ms-input-placeholder {
   text-transform: capitalize;
   display: block;
   position: relative;
+  text-wrap-mode: nowrap;
   z-index: 1;
 }
 
@@ -2644,10 +2649,11 @@ textarea:-ms-input-placeholder {
 
 .exvent-hero-section-02 .exvent-hero-title .shape-3 {
   position: absolute;
-  left: -83px;
-  top: 50px;
+  left: -94px;
+  top: 103px;
   pointer-events: none;
   z-index: -10;
+  zoom: 0.76;
 }
 
 @media only screen and (max-width: 991px) {
@@ -4920,11 +4926,11 @@ textarea:-ms-input-placeholder {
   .shedule-row
   .schedule-thumbnail
   .schedule-thumb-img {
-  width: 90px;
-  height: 90px;
+  width: 110px;
+  height: 110px;
   object-fit: cover;
   border-radius: 50%;
-  filter: grayscale(0.5);
+  filter: grayscale(0.1);
 }
 
 @media only screen and (max-width: 575px) {
