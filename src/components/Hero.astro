@@ -7,6 +7,7 @@ import Hero2Shape1 from '@/images/shape/hero-2-shape1.png';
 import KubefestLogoWhite from '@/images/logo/kubefest-logo-white.svg';
 import KubeconBg from '@/images/bg/kubecon.jpg';
 import Countdown from './Countdown.astro';
+import TicketsButton from './TicketsButton.astro';
 
 const optimizedKubeconBg = await getImage({ src: KubeconBg });
 ---
@@ -59,7 +60,7 @@ const optimizedKubeconBg = await getImage({ src: KubeconBg });
             data-aos-delay="800"
             data-aos-duration="1200"
           >
-            Descubre Kubernetes en La Rioja
+            Infraestructura, Kubernetes, IA y más en Logroño
           </p>
           <Image
             src={Hero2Shape1}
@@ -80,7 +81,7 @@ const optimizedKubeconBg = await getImage({ src: KubeconBg });
     >
       <div class="col-md-10 text-center">
         <Countdown date="2025/02/27" />
-        <!-- <YouTube id="Kq_CKHwE2p8" /> -->
+        <div class="mt-5"><TicketsButton /></div>
       </div>
     </div>
   </div>
