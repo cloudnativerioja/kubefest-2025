@@ -5,9 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro preview --port 3000",
+    "start": "astro preview --port 3000 --host",
     "build": "astro check && astro build",
-    "preview": "astro preview",
     "format": "prettier --write **/*.astro .",
     "astro": "astro"
   },
