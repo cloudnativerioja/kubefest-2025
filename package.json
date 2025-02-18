@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+    "start": "astro dev --host",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "format": "prettier --write **/*.astro .",
