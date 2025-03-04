@@ -1,12 +1,11 @@
 ---
 import { Image, getImage } from 'astro:assets';
+import { YouTube } from 'astro-embed';
 import HeroFadeShape1 from '@/images/shape/hero-fade-shape1.png';
 import HeroFadeShape2 from '@/images/shape/hero-fade-shape2.png';
 import Hero2Shape1 from '@/images/shape/hero-2-shape1.png';
 import KubefestLogoWhite from '@/images/logo/kubefest-logo-white.svg';
 import KubeFestBg from '@/images/bg/kubefest-bg.jpg';
-import Countdown from './Countdown.astro';
-import TicketsButton from './TicketsButton.astro';
 
 const optimizedKubeconBg = await getImage({ src: KubeFestBg });
 ---
@@ -78,9 +77,8 @@ const optimizedKubeconBg = await getImage({ src: KubeFestBg });
       data-aos-delay="650"
       data-aos-duration="1200"
     >
-      <div class="col-md-10 text-center">
-        <Countdown date="2025/02/28" />
-        <div class="mt-5"><TicketsButton /></div>
+      <div class="col-11 col-lg-6 mb-lg-8">
+        <YouTube id="3yI-rt_xevU" />
       </div>
     </div>
   </div>
